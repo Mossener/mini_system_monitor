@@ -2,8 +2,11 @@
 #include <iostream>
 #include <vector>
 #include <future> 
+#include <nlohmann/json.hpp>
 #include "ThreadPool.h"
+#include "cpuMonitor.h"
 
+using json = nlohmann::json;
 enum  U:int{
   CPU_MONITOR = 0,
   MEMORY_MONITOR = 1,
@@ -15,7 +18,12 @@ enum  U:int{
 class EventsMonitor {
 public:
   EventsMonitor() =default;
-  ~EventsMonitor();
+  ~EventsMonitor(){
+    if(is_running){
+      is_running = false;
+      thread_pool.stop();
+    }
+  }
   EventsMonitor(int num_threads,bool cpu_monitor,bool memory_monitor,bool disk_monitor,
                 bool network_monitor,bool process_monitor,bool system_monitor):
                 thread_pool(num_threads),is_initialized(false),is_running(false){
@@ -30,9 +38,24 @@ public:
       std::cout << "Number of threads cannot be less than or equal to 0. Setting all monitors to false." << std::endl;
     }
     is_initialized = true;
+    is_running = true;
+    for(int i =0;i<6;i++){
+      if(monitored_events[i]){
+        switch(i){
+          case U::CPU_MONITOR:
+            break;
+        }
+      }
+    }
     while(is_running){
+      sleep(1);
       for(int i = 0;i<num_threads;i++){
-        tasks[i]();
+        auto future = thread_pool.enqueue([]() -> json {
+          cpuMonitor monitor;
+          return json(monitor);
+        });
+        json result = future.get();
+        std::cout<< result << std::endl;
       }
     }
   }
@@ -40,6 +63,6 @@ private:
   bool is_initialized;
   bool is_running;
   bool monitored_events[6];
-  std::vector<std::packaged_task<void()>> tasks;
+
   ThreadPool thread_pool;
 };

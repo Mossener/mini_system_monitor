@@ -6,7 +6,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/3.28.3/CMakeSystem.cmake"
+			"path" : "build/CMakeFiles/3.22.1/CMakeSystem.cmake"
 		},
 		{
 			"path" : "extern/vcpkg/scripts/buildsystems/vcpkg.cmake"
@@ -14,86 +14,81 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/CMakeDependentOption.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeDependentOption.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake"
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
+			"path" : "build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/Platform/Linux.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/Platform/Linux.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/Compiler/GNU.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/Compiler/GNU.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
 			"isGenerated" : true,
@@ -126,42 +121,42 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/FindThreads.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/FindThreads.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/CheckLibraryExists.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/CheckIncludeFileCXX.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/CheckIncludeFileCXX.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/CheckCXXSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake"
 		},
 		{
 			"isGenerated" : true,
@@ -194,12 +189,12 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake"
+			"path" : "/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isGenerated" : true,
@@ -212,8 +207,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/yurika/c_area/SystemEventMonitor/build",
-		"source" : "/home/yurika/c_area/SystemEventMonitor"
+		"build" : "/home/yuirka/c_area/mini_system_monitor/build",
+		"source" : "/home/yuirka/c_area/mini_system_monitor"
 	},
 	"version" : 
 	{

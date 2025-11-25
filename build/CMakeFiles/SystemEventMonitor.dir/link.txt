@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/SystemEventMonitor.dir/src/main.cpp.o -o SystemEventMonitor  vcpkg_installed/x64-linux/debug/lib/libfmtd.a vcpkg_installed/x64-linux/debug/lib/libspdlogd.a vcpkg_installed/x64-linux/debug/lib/libfmtd.a 
