@@ -5,6 +5,7 @@
 #include <nlohmann/json.hpp>
 #include "ThreadPool.h"
 #include "cpuMonitor.h"
+#include "memoryMonitor.h"
 
 using json = nlohmann::json;
 enum  U:int{
@@ -39,25 +40,26 @@ public:
     }
     is_initialized = true;
     is_running = true;
-    for(int i =0;i<6;i++){
-      if(monitored_events[i]){
-        switch(i){
-          case U::CPU_MONITOR:
-            break;
-        }
-      }
-    }
+    std::vector<std::future<json>> results;
     while(is_running){
       sleep(1);
-      for(int i = 0;i<num_threads;i++){
-        auto future = thread_pool.enqueue([]() -> json {
-          cpuMonitor monitor;
-          return json(monitor);
-        });
-        json result = future.get();
-        std::cout<< result << std::endl;
+      if(monitored_events[U::CPU_MONITOR]){
+        cpuMonitor cpu_monitor;
+        results.push_back(thread_pool.enqueue(cpu_monitor));
+        
       }
+      if(monitored_events[U::MEMORY_MONITOR]){
+        MemoryMonitor memory_monitor;
+        results.push_back(thread_pool.enqueue(memory_monitor));
+      }
+      for(auto & result : results){
+        json j = result.get();
+        std::cout << j.dump(4) << std::endl;
+      }
+      results.clear();
+
     }
+
   }
 private:
   bool is_initialized;

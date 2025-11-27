@@ -1,12 +1,7 @@
 #include <iostream>
 #include "EventsMonitor.h"
 int main() {
-    EventsMonitor monitor(1, true, false, false, false, false, false);
-
-    while(true) {
-        // Main thread can perform other tasks or just sleep
-        sleep(10);
-    }
+    EventsMonitor monitor(1, true, true, false, false, false, false);
     monitor.~EventsMonitor();
     return 0;
 }

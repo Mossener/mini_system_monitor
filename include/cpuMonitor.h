@@ -15,7 +15,7 @@ public:
     cpu_usage = getCpuUsage();
   }
 
-  operator json() const {
+  json operator()() const {
     json j;
     j["cpu_count"] = cpu_count;
     j["cpu_freq"] = cpu_freq;
