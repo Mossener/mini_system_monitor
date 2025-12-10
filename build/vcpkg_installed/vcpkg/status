@@ -2,14 +2,14 @@ Package: vcpkg-cmake-config
 Version: 2024-05-23
 Architecture: x64-linux
 Multi-Arch: same
-Abi: 4f1b7c735a582de23082bd76b11a66b60c05d634035dcc2ecbde6bffbfd6f87f
+Abi: 7deca9f6153c0bfec5e3aa43ba7e0a7ea7c6ac34cf1d98c363956840db85bbb3
 Status: install ok installed
 
 Package: vcpkg-cmake
 Version: 2024-04-23
 Architecture: x64-linux
 Multi-Arch: same
-Abi: ff4b4aca9efa67ea7ef5a6b4f4f6d99b6db3153259397caceb6519289695d8e3
+Abi: 320d9cd6b078c1ada8c739386fb82083d624750c902c411b73ef16d44b044403
 Status: install ok installed
 
 Package: fmt
@@ -17,7 +17,7 @@ Version: 12.1.0
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-linux
 Multi-Arch: same
-Abi: 49a21d1a7b323214ee07803a8f6a856945a5651326927cc89fa6a46f23ee9cc8
+Abi: c6ed70744857c72cb4284e2ad692a23bec83d7edb7f2caec3986086343dd48b6
 Description: {fmt} is an open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.
 Status: install ok installed
 
@@ -27,7 +27,7 @@ Port-Version: 1
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-linux
 Multi-Arch: same
-Abi: e7bd53acc79469d863e29f13add76723608757a755d4d26745405c8a471779f7
+Abi: 72fe1568a3f3322dd199563d3a5efced04d85928c032ed9f5c308e946e64362c
 Description: JSON for Modern C++
 Status: install ok installed
 
@@ -36,7 +36,7 @@ Version: 1.16.0
 Depends: fmt, vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-linux
 Multi-Arch: same
-Abi: a1d9202a633901487b1cab5b96980c8adfc2a04af1150743be579f6cc547efba
+Abi: 142a790b630e3f61a4e9708f21ad6caafb1900057c57a7273fe51f4a47472f76
 Description: Very fast, header-only/compiled, C++ logging library.
 Status: install ok installed
 

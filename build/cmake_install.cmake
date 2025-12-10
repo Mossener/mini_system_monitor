@@ -1,4 +1,4 @@
-# Install script for directory: /home/yuirka/c_area/mini_system_monitor
+# Install script for directory: /home/yurika/c_area/SystemEventMonitor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yuirka/c_area/mini_system_monitor/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yurika/c_area/SystemEventMonitor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

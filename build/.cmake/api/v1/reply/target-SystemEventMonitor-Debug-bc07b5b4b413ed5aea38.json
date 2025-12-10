@@ -57,10 +57,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
-				},
-				{
-					"fragment" : "-std=gnu++20"
+					"fragment" : "-g -std=gnu++20"
 				}
 			],
 			"defines" : 
@@ -78,12 +75,12 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/home/yuirka/c_area/mini_system_monitor/include"
+					"path" : "/home/yurika/c_area/SystemEventMonitor/include"
 				},
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "/home/yuirka/c_area/mini_system_monitor/build/vcpkg_installed/x64-linux/include"
+					"path" : "/home/yurika/c_area/SystemEventMonitor/build/vcpkg_installed/x64-linux/include"
 				}
 			],
 			"language" : "CXX",

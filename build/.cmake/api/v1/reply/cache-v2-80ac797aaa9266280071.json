@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/yuirka/c_area/mini_system_monitor/build"
+			"value" : "/home/yurika/c_area/SystemEventMonitor/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "22"
+			"value" : "28"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,23 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
-		},
-		{
-			"name" : "CMAKE_COLOR_MAKEFILE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Enable/Disable color output during build."
-				}
-			],
-			"type" : "BOOL",
-			"value" : "ON"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -175,7 +159,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/usr/bin/gcc-ar-13"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -191,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/usr/bin/gcc-ranlib-13"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -418,6 +402,18 @@
 			"value" : ""
 		},
 		{
+			"name" : "CMAKE_FIND_PACKAGE_REDIRECTS_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake."
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/yurika/c_area/SystemEventMonitor/build/CMakeFiles/pkgRedirects"
+		},
+		{
 			"name" : "CMAKE_GENERATOR",
 			"properties" : 
 			[
@@ -427,7 +423,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Unix Makefiles"
+			"value" : "Ninja"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -478,18 +474,6 @@
 			"value" : "1"
 		},
 		{
-			"name" : "CMAKE_HAVE_PTHREAD_H",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Have include pthread.h"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "1"
-		},
-		{
 			"name" : "CMAKE_HOME_DIRECTORY",
 			"properties" : 
 			[
@@ -499,7 +483,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/yuirka/c_area/mini_system_monitor"
+			"value" : "/home/yurika/c_area/SystemEventMonitor"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -551,11 +535,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a program."
+					"value" : "Program used to build from build.ninja files."
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gmake"
+			"value" : "/usr/bin/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -787,7 +771,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/share/cmake-3.22"
+			"value" : "/usr/share/cmake-3.28"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -998,6 +982,22 @@
 			"value" : "/usr/bin/strip"
 		},
 		{
+			"name" : "CMAKE_TAPI",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_TAPI-NOTFOUND"
+		},
+		{
 			"name" : "CMAKE_TOOLCHAIN_FILE",
 			"properties" : 
 			[
@@ -1011,7 +1011,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/home/yuirka/c_area/mini_system_monitor/extern/vcpkg/scripts/buildsystems/vcpkg.cmake"
+			"value" : "/home/yurika/c_area/SystemEventMonitor/extern/vcpkg/scripts/buildsystems/vcpkg.cmake"
 		},
 		{
 			"name" : "CMAKE_UNAME",
@@ -1063,7 +1063,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/home/yuirka/c_area/mini_system_monitor/build/vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonConfig.cmake][v3.12.0()]"
+			"value" : "[/home/yurika/c_area/SystemEventMonitor/build/vcpkg_installed/x64-linux/share/nlohmann_json/nlohmann_jsonConfig.cmake][v3.12.0()]"
 		},
 		{
 			"name" : "SystemEventMonitor_BINARY_DIR",
@@ -1075,7 +1075,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/yuirka/c_area/mini_system_monitor/build"
+			"value" : "/home/yurika/c_area/SystemEventMonitor/build"
 		},
 		{
 			"name" : "SystemEventMonitor_IS_TOP_LEVEL",
@@ -1099,7 +1099,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/yuirka/c_area/mini_system_monitor"
+			"value" : "/home/yurika/c_area/SystemEventMonitor"
 		},
 		{
 			"name" : "VCPKG_APPLOCAL_DEPS",
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/yuirka/c_area/mini_system_monitor/build/vcpkg_installed"
+			"value" : "/home/yurika/c_area/SystemEventMonitor/build/vcpkg_installed"
 		},
 		{
 			"name" : "VCPKG_INSTALL_OPTIONS",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/yuirka/c_area/mini_system_monitor"
+			"value" : "/home/yurika/c_area/SystemEventMonitor"
 		},
 		{
 			"name" : "VCPKG_MANIFEST_INSTALL",
@@ -1331,7 +1331,19 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/yuirka/c_area/mini_system_monitor/extern/vcpkg"
+			"value" : "/home/yurika/c_area/SystemEventMonitor/extern/vcpkg"
+		},
+		{
+			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
 		},
 		{
 			"name" : "_VCPKG_INSTALLED_DIR",
@@ -1343,7 +1355,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/yuirka/c_area/mini_system_monitor/build/vcpkg_installed"
+			"value" : "/home/yurika/c_area/SystemEventMonitor/build/vcpkg_installed"
 		},
 		{
 			"name" : "fmt_DIR",
@@ -1355,7 +1367,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/yuirka/c_area/mini_system_monitor/build/vcpkg_installed/x64-linux/share/fmt"
+			"value" : "/home/yurika/c_area/SystemEventMonitor/build/vcpkg_installed/x64-linux/share/fmt"
 		},
 		{
 			"name" : "nlohmann_json_DIR",
@@ -1367,7 +1379,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/yuirka/c_area/mini_system_monitor/build/vcpkg_installed/x64-linux/share/nlohmann_json"
+			"value" : "/home/yurika/c_area/SystemEventMonitor/build/vcpkg_installed/x64-linux/share/nlohmann_json"
 		},
 		{
 			"name" : "spdlog_DIR",
@@ -1379,7 +1391,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/yuirka/c_area/mini_system_monitor/build/vcpkg_installed/x64-linux/share/spdlog"
+			"value" : "/home/yurika/c_area/SystemEventMonitor/build/vcpkg_installed/x64-linux/share/spdlog"
 		}
 	],
 	"kind" : "cache",

@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SystemEventMonitor::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SystemEventMonitor-Debug-8ed5ad6259b7f3c22f81.json",
+					"jsonFile" : "target-SystemEventMonitor-Debug-bc07b5b4b413ed5aea38.json",
 					"name" : "SystemEventMonitor",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/yuirka/c_area/mini_system_monitor/build",
-		"source" : "/home/yuirka/c_area/mini_system_monitor"
+		"build" : "/home/yurika/c_area/SystemEventMonitor/build",
+		"source" : "/home/yurika/c_area/SystemEventMonitor"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 6
 	}
 }
