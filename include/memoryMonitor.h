@@ -7,11 +7,13 @@ using json = nlohmann::json;
 class MemoryMonitor {
 public:
   json operator()(){
-    json j;
-    j["total_memory"] = total_memory;
-    j["free_memory"] = free_memory;
-    j["used_memory"] = used_memory;
-    j["memory_usage"] = memory_usage;
+    json j,j_data;
+    j["type"] = "memory";
+    j_data["total_memory"] = total_memory;
+    j_data["free_memory"] = free_memory;
+    j_data["used_memory"] = used_memory;
+    j_data["memory_usage"] = memory_usage;
+    j["data"] = j_data;
     return j;
   }
   MemoryMonitor() {

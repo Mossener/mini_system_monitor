@@ -5,6 +5,11 @@
 #include <fstream>
 #include <nlohmann/json.hpp>
 #include <vector>
+#include <chrono>
+#include <ctime>
+#include <iostream>
+#include <algorithm>
+#include <numeric>
 using json = nlohmann::json;
 namespace filesystem = std::filesystem;
 //检测所有进程的运行状态
@@ -71,7 +76,7 @@ public:
   ProcessMonitor() = default;
   ~ProcessMonitor() = default;
   json operator()(){
-    json j;
+    json j = json::object();
     std::vector<int>pid_array;
     filesystem::path dir = "/proc";
 
@@ -90,7 +95,22 @@ public:
       std::string memory_usage_file_path = status_file_path + "/status";
       std::string io_usage_file_path = status_file_path + "/net/dev";
       Stat stat = getCpuTime(cpu_usage_file_path);
-
+      Statm statm = getMemoryUsage(memory_usage_file_path);
+      std::string pid_key = std::to_string(pid);
+      j[pid_key]["name"] = stat.name;
+      j[pid_key]["state"] = stat.state;
+      j[pid_key]["ppid_key"] = stat.ppid;
+      j[pid_key]["utime"] = stat.utime;
+      j[pid_key]["stime"] = stat.stime;
+      j[pid_key]["cutime"] = stat.cutime;
+      j[pid_key]["cstime"] = stat.cstime;
+      j[pid_key]["priority"] = stat.priority;
+      j[pid_key]["nice"] = stat.nice;
+      j[pid_key]["num_threads"] = stat.num_threads;
+      j[pid_key]["starttime"] = stat.starttime;
+      j[pid_key]["rss"] = stat.rss;
+      j[pid_key]["policy"] = stat.policy;
+      j[pid_key]["size"] = statm.size;
     }
     return j;
   }

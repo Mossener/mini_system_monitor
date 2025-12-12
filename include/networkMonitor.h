@@ -10,11 +10,13 @@ using json = nlohmann::json;
 class NetworkMonitor {
 public:
   json operator()(){
-    json j;
-    j["total_bytes_sent"] = total_bytes_sent;
-    j["total_bytes_received"] = total_bytes_received;
-    j["bytes_sent_per_sec"] = bytes_sent_per_sec;
-    j["bytes_received_per_sec"] = bytes_received_per_sec;
+    json j,j_data;
+    j["type"] = "network";
+    j_data["total_bytes_sent"] = total_bytes_sent;
+    j_data["total_bytes_received"] = total_bytes_received;
+    j_data["bytes_sent_per_sec"] = bytes_sent_per_sec;
+    j_data["bytes_received_per_sec"] = bytes_received_per_sec;
+    j["data"] = j_data;
     return j;
   }
   NetworkMonitor(){

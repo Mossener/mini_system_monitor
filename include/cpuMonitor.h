@@ -16,10 +16,12 @@ public:
   }
 
   json operator()() const {
-    json j;
-    j["cpu_count"] = cpu_count;
-    j["cpu_freq"] = cpu_freq;
-    j["cpu_usage"] = cpu_usage;
+    json j,j_data;
+    j["type"] = "cpu";
+    j_data["count"] = cpu_count;
+    j_data["freq"] = cpu_freq;
+    j_data["usage"] = cpu_usage;
+    j["data"] = j_data;
     return j;
   }
 

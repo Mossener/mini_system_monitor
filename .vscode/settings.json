@@ -78,5 +78,6 @@
   },
   "cmake.configureArgs": [
     "-DCMAKE_TOOLCHAIN_FILE=${workspaceFolder}/extern/vcpkg/scripts/buildsystems/vcpkg.cmake"
-  ]
+  ],
+  "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json"
 }

@@ -9,11 +9,14 @@ using json = nlohmann::json;
 class DiskMonitor{
 public:
   json operator()(){
-    json j;
-    j["total_disk"] = total_disk;
-    j["used_disk"] = used_disk;
-    j["free_disk"] = free_disk;
-    j["disk_usage"] = disk_usage;
+    json j,j_data;
+    j["type"] = "disk";
+    j_data["total"] = total_disk;
+    j_data["used"] = used_disk;
+    j_data["free"] = free_disk;
+    j_data["usage"] = 0;
+    j["data"] = j_data;
+
     return j;
   }
   DiskMonitor(){
@@ -38,7 +41,6 @@ private:
     total_disk = (stat.f_blocks * stat.f_frsize) / 1024;
     free_disk = (stat.f_bfree * stat.f_frsize) / 1024;
     used_disk = total_disk - free_disk;
-    disk_usage = (used_disk * 100) / total_disk;
   }
   int total_disk;
   int used_disk;
