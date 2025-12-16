@@ -7,7 +7,8 @@ using json = nlohmann::json;
 class MemoryMonitor {
 public:
   json operator()(){
-    json j,j_data;
+    json j;
+    json j_data;
     j["type"] = "memory";
     j_data["total_memory"] = total_memory;
     j_data["free_memory"] = free_memory;
@@ -22,7 +23,7 @@ public:
     used_memory = total_memory - free_memory;
     memory_usage = (used_memory * 100) / total_memory;
   }
-  int getTotalMemory() {
+  int getTotalMemory() const {
     std::ifstream mem_info("/proc/meminfo");
     std::string line;
     int total = 0;
@@ -36,7 +37,7 @@ public:
     }
     return total; // in kB
   }
-  int getFreeMemory() {
+  int getFreeMemory() const  {
     std::ifstream mem_info("/proc/meminfo");
     std::string line;
     int free = 0;

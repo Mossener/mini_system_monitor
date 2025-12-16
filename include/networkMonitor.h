@@ -10,7 +10,8 @@ using json = nlohmann::json;
 class NetworkMonitor {
 public:
   json operator()(){
-    json j,j_data;
+    json j;
+    json j_data;
     j["type"] = "network";
     j_data["total_bytes_sent"] = total_bytes_sent;
     j_data["total_bytes_received"] = total_bytes_received;
@@ -34,7 +35,8 @@ private:
     while(std::getline(file,line)){
       std::istringstream ss (line);
       std::string interface;
-      unsigned long bytes_received,bytes_sent;
+      unsigned long bytes_received;
+      unsigned long bytes_sent;
       ss >> interface;
       ss >> bytes_received;
       for(int i =0;i<7;i++){

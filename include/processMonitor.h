@@ -75,7 +75,7 @@ class ProcessMonitor {
 public:
   ProcessMonitor() = default;
   ~ProcessMonitor() = default;
-  json operator()(){
+  json operator()() const{
     json j = json::object();
     std::vector<int>pid_array;
     filesystem::path dir = "/proc";
@@ -84,13 +84,13 @@ public:
       if(file_defination.is_directory()){
         std::string dir_name = file_defination.path().filename().string();
 
-        if(std::all_of(dir_name.begin(), dir_name.end(),::isdigit)){
+        if(std::ranges::all_of(dir_name,::isdigit)){
           pid_array.push_back(std::stoi(dir_name));
         }
       }
     }
-    for(auto & pid : pid_array){
-      std::string status_file_path = "/proc/" + std::to_string(pid);
+    for(const auto & pid : pid_array){
+      std::string status_file_path = std::format("/proc/{}",pid);
       std::string cpu_usage_file_path = status_file_path + "/stat";
       std::string memory_usage_file_path = status_file_path + "/status";
       std::string io_usage_file_path = status_file_path + "/net/dev";
@@ -115,18 +115,18 @@ public:
     return j;
   }
 private:
-  Stat getCpuTime(std::string file_path){
+  Stat getCpuTime(const std::string& file_path)const{
     Stat stat;
-    std::ifstream ifs(file_path);
-    if(ifs.is_open()){
+
+    if(std::ifstream ifs(file_path);ifs.is_open()){
       ifs >> stat.pid >> stat.name >> stat.state >> stat.ppid >> stat.pgrp >> stat.session >> stat.tty_nr >> stat.tpgid >> stat.flags >> stat.minflt >> stat.cminflt >> stat.majflt >> stat.cmajflt >> stat.utime >> stat.stime >> stat.cutime >> stat.cstime >> stat.priority >> stat.nice >> stat.num_threads >> stat.itrealvalue >> stat.starttime >> stat.vsize >> stat.rss >> stat.rsslim >> stat.startcode >> stat.endcode >> stat.startstack >> stat.kstkesp >> stat.signal >> stat.blocked >> stat.sigignore >> stat.sigcatch >> stat.wchan >> stat.nswap >> stat.cnswap >> stat.exit_signal >> stat.processor >> stat.rt_priority >> stat.policy >> stat.delayacct_blkio_ticks >> stat.guest_time >> stat.cguest_time;
     }
     return stat;
   }
-  Statm getMemoryUsage(std::string file_path){
+  Statm getMemoryUsage(const std::string& file_path)const {
     Statm statm;
-    std::ifstream ifs(file_path);
-    if(ifs.is_open()){
+
+    if(std::ifstream ifs(file_path);ifs.is_open()){
       ifs >> statm.size >> statm.resident >> statm.share >> statm.text >> statm.lib >> statm.data >> statm.dt;
     }
     return statm;

@@ -6,6 +6,7 @@
 
 using json = nlohmann::json;
 
+//还没有修好————准备改用shell脚本的形式处理数据，再写入log文件
 class DiskMonitor{
 public:
   json operator()(){

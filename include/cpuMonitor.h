@@ -16,7 +16,8 @@ public:
   }
 
   json operator()() const {
-    json j,j_data;
+    json j;
+    json j_data;
     j["type"] = "cpu";
     j_data["count"] = cpu_count;
     j_data["freq"] = cpu_freq;
@@ -31,7 +32,7 @@ private:
   int cpu_usage;
 
 private: 
-  int getCputCount() {
+  int getCputCount() const {
     std::ifstream cpu_info("/proc/cpuinfo");
     std::string line;
     int count = 0;
@@ -43,20 +44,23 @@ private:
     return count;
   }
 
-  int getCpuFreq() {
+  int getCpuFreq() const  {
     std::ifstream cpu_info("/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq");
     int freq = 0;
     cpu_info >> freq;
     return freq / 1000; // Convert to MHz
   }
 
-  int getCpuUsage() {
+  int getCpuUsage() const {
     std::ifstream stat_file("/proc/stat");
     std::string line;
     std::getline(stat_file, line);
     std::istringstream ss(line);
     std::string cpu;
-    int user, nice, system, idle;
+    int user;
+    int nice;
+    int system;
+    int idle;
     ss >> cpu >> user >> nice >> system >> idle;
     int total = user + nice + system + idle;
     int usage = (total - idle) * 100 / total;
