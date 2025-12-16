@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/yurika/c_area/SystemEventMonitor/build",
-  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -I/home/yurika/c_area/SystemEventMonitor/include -isystem /home/yurika/c_area/SystemEventMonitor/build/vcpkg_installed/x64-linux/include -g -std=gnu++20 -o CMakeFiles/SystemEventMonitor.dir/src/main.cpp.o -c /home/yurika/c_area/SystemEventMonitor/src/main.cpp",
-  "file": "/home/yurika/c_area/SystemEventMonitor/src/main.cpp",
-  "output": "CMakeFiles/SystemEventMonitor.dir/src/main.cpp.o"
-}
-]

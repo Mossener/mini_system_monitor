@@ -1,3 +1,0 @@
-/home/yurika/c_area/SystemEventMonitor/build/CMakeFiles/SystemEventMonitor.dir
-/home/yurika/c_area/SystemEventMonitor/build/CMakeFiles/edit_cache.dir
-/home/yurika/c_area/SystemEventMonitor/build/CMakeFiles/rebuild_cache.dir
